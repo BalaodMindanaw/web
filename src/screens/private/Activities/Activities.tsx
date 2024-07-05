@@ -43,7 +43,7 @@ const Activities = ({resetPartners,data}:any) => {
       <h1 className=" flex items-center gap-4 text-4xl font-fbold text-primary "><span>Activities</span> 
       <Link 
       className=' text-sm px-4 py-2 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground'
-      to="/balaod/editable/create-blog"
+      to="/editable/create-blog"
 
       >Create Activity</Link></h1>
 
@@ -67,7 +67,7 @@ const Activities = ({resetPartners,data}:any) => {
           <button  
           onClick={()=>{
             window.scrollTo(0, 0);
-            navigate("/balaod/kudlit")
+            navigate("/kudlit")
 
           }}
           className=" w-[400px] sm:w-[300px]  hover:opacity-60 transition-all duration-200 font-black shadow-2xl text-primary-foreground uppercase  sm:text-sm bg-transparent border border-primary-foreground text-xl p-4">

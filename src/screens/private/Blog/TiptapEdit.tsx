@@ -93,7 +93,7 @@ const TiptapEdit = ({ data, setData }:any) => {
     const url = window.prompt('URL')
 
     if (url) {
-      editor.chain().focus().setImage({ src: url }).run()
+      editor.chain().focus().setImage({ src: url }).setImage({ href: url }).run()
     }
   }
 

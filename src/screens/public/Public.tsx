@@ -91,7 +91,7 @@ function Public() {
           style={{ top: navbarTop }}
           className=" transition-all duration-500 z-50 animate__animated animate__slideInDown   bg-[#4d172e] from-[#4d172e] from-5% via-background  via-40% to-background to-50% b backdrop-blur-md    fixed flex justify-between items-center w-full max-w-full py-0   "
         >
-          <Link className=" ml-5 flex items-center" to="/balaod">
+          <Link className=" ml-5 flex items-center" to="/">
             <img
               src={HeadLogo}
               className="  logo h-10 object-contain "
