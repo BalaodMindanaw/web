@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat Black';
+  src: url('./assets/fonts/Montserrat-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat BlackItalic';
+  src: url('./assets/fonts/Montserrat-BlackItalic.ttf');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('./assets/fonts/Montserrat-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat BoldItalic';
+  src: url('./assets/fonts/Montserrat-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat ExtraBold';
+  src: url('./assets/fonts/Montserrat-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat ExtraBoldItalic';
+  src: url('./assets/fonts/Montserrat-ExtraBoldItalic.ttf');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat ExtraLight';
+  src: url('./assets/fonts/Montserrat-ExtraLight.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat ExtraLightItalic';
+  src: url('./assets/fonts/Montserrat-ExtraLightItalic.ttf');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat Italic';
+  src: url('./assets/fonts/Montserrat-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url('./assets/fonts/Montserrat-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat LightItalic';
+  src: url('./assets/fonts/Montserrat-LightItalic.ttf');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url('./assets/fonts/Montserrat-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat MediumItalic';
+  src: url('./assets/fonts/Montserrat-MediumItalic.ttf');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('./assets/fonts/Montserrat-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat SemiBold';
+  src: url('./assets/fonts/Montserrat-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat SemiBoldItalic';
+  src: url('./assets/fonts/Montserrat-SemiBoldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat Thin';
+  src: url('./assets/fonts/Montserrat-Thin.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat ThinItalic';
+  src: url('./assets/fonts/Montserrat-ThinItalic.ttf');
+  font-weight: 100;
+  font-style: italic;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  background: #fcfaf8;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+  background: #651f3d;
+  }
+
+*{
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210, 25%, 91%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary:  327, 58%, 23%;
+    --primary-foreground: 33, 100%, 50%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 40, 33%, 98%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 0 0% 100%;
+    --foreground: 210, 25%, 91%;
+    --card: 0 0% 100%;
+    --text: 40, 33%, 98%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary:  327, 58%, 23%;
+    --primary-foreground: 33, 100%, 50%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.75rem;
+  }
+}
+
+
